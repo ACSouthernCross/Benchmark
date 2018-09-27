@@ -1,0 +1,10 @@
+version: 3
+services:
+    benchmark:
+        #build: 
+        #  context: ./dir
+        #  dockerfile: /test/owasp-bench/Benchmark/
+        ports:
+            - '8443:8443'
+        image: 'benchmark:v1.2'
+        command: '/benchmark/bench.sh'
